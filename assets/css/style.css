@@ -1,1 +1,272 @@
 @charset "utf-8";
+.wrapper {
+  padding: 32px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+.inner {
+  width: 640px;
+  margin: 0 auto;
+}
+.button {
+  display: inline-block;
+  text-align: center;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  transition: background-color 0.3s;
+
+}
+.is-fullWidth {
+  width: 100%;
+}
+.is-halfWidth {
+  width: 50%;
+}
+.is-defaltText {
+  color: #949697;
+  font-size: 12px;
+}
+.input-int {
+  -webkit-appearance: none;
+  outline: none;
+  resize: none;
+}
+
+/* メイン*/
+.main-contents {
+  padding: 48px 64px;
+  margin-bottom: 32px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #545658;
+}
+/* アカウント認証ボタン*/
+.columns {
+  display: flex;
+  margin-bottom: 8px;
+}
+.is-facebook {
+  background-color: #3b5999;
+  border-color: #3b5999;
+  color: white;
+}
+.is-facebook:hover {
+  background-color: #344e87;
+  border-color: transparent;
+}
+.is-google {
+  color: #dd4b39;
+}
+.is-google:hover {
+  background-color: #f7f7f7;
+}
+.column:last-child {
+  margin-left: 8px;
+}
+/* 注釈 */
+.annotation {
+  text-align: center;
+}
+
+/* アカウント情報入力欄 */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+.divider p {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+.row {
+  margin-bottom: 20px;
+}
+.name-box {
+  display: flex;
+}
+.name:first-child {
+  margin-right: 16px;
+}
+.label-text {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #545658;
+}
+.alert {
+  color: #dd4b39;
+}
+.inputarea {
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  box-sizing: border-box;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+.inputarea:focus {
+  box-shadow: 0 0 4px 0 #01bfbd;
+  background-color: #fff;
+}
+
+/* 性別 */
+.gender-contents {
+  display: flex;
+  color: #545658;
+  font-size: 16px;
+}
+.gender-content {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.gender-content input {
+  display: none;
+}
+.gender-content span {
+  position: relative;
+  padding: 3px 3px 3px 20px;
+  display: inline-block;
+}
+.gender-content span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+.gender-input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 30%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+/* 出身 */
+.origin-input {
+  width: 50%;
+}
+.select-area {
+  position: relative;
+}
+.select-area::after {
+  content: "";
+  display: inline-block;
+  transform: rotate(45deg);
+  position: absolute;
+  left: 45%;
+  top: 13px;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+
+/* パスワード */
+
+/* コース選択 */
+.course-option {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+.course-option input {
+  display: none;
+}
+.course-option-text {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+.course-option-text::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.course-option input:checked + .course-option-text::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: -30%;
+  width: 8px;
+  height: 16px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+}
+
+/* 備考欄 */
+.remarkes .inputarea {
+  height: 100px;
+}
+
+/* アカウント作成ボタン */
+.submit-btn {
+  padding: 13px;
+  color: #fff;
+  background-color: #01bfbd;
+}
+.submit-btn:hover {
+  background-color: #01a6a4;
+}
+
+/* 利用規約 */
+.agreement {
+  font-size: 12px;
+  line-height: 16px;
+}
+.link-color {
+  color: #01a6a4;
+}
+.link-color:hover {
+  color: #01bfbd;
+}
+
+/* フッター部分 */
+.footer-part {
+  text-align: center;
+}
+.footer-part p, .resend-mail {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+.footer-part a:hover {
+  border-bottom: 1px solid #01bfbd;
+}
