@@ -56,6 +56,10 @@
   border: 1px solid #d9d9d9;
 }
 
+.row, .annotation, .divider {
+  margin-bottom: 20px;
+}
+
 .button, .gender-content, .course-option-text {
   cursor: pointer;
 }
@@ -90,11 +94,12 @@
 
 .form-title {
   font-size: 24px;
+  margin-bottom: 24px;
 }
 
 /* アカウント認証ボタン*/
 .columns {
-  margin-top: 24px;
+  margin-bottom: 8px;
 }
 
 .is-facebook {
@@ -118,16 +123,7 @@
   margin-left: 8px;
 }
 
-/* 注釈 */
-.annotation {
-  margin-top: 8px;
-}
-
 /* アカウント情報入力欄 */
-.divider {
-  margin: 20px 0;
-}
-
 .divider p {
   padding: 0 10px;
 }
@@ -140,10 +136,6 @@
   height: 1px;
   width: 100%;
   background-color: #ececec;
-}
-
-.row {
-  margin-bottom: 20px;
 }
 
 .name:last-child {
